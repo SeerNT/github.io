@@ -1,0 +1,79 @@
+html{
+	background-color: #1f1f23;	
+}
+#veryDangerSecret{
+  height: 250px;
+  line-height: 800px;
+  text-align: center;
+  font-size: 58px;
+  color: red;
+  font-weight: bold;	
+}
+#dangerTitle{
+  height: 50px;
+  line-height: 10px;
+  text-align: center;
+  font-size: 58px;
+  color: red;
+  font-weight: bold;
+}
+#dangerText{
+  height: -100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 38px;
+  color: red;
+}
+#dangerImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.secret1{
+	font-size: 120%;
+}
+.secretTooltip {
+  display: inline;
+  position: relative;
+}
+
+.secretTooltip:hover:after {
+  background: #333;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  bottom: -34px;
+  color: #fff;
+  content: attr(gloss);
+  left: 20%;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 98;
+  width: 350px;
+}
+
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #585858;
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    left: 810px;
+	bottom: -25px;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
